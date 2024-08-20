@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+  <input type="radio" name="Photos" id="check1" checked>
+  <input type="radio" name="Photos" id="check2" checked>
+  <input type="radio" name="Photos" id="check3"checked>
+  <input type="radio" name="Photos" id="check4"checked>
+
+  <div class="container">
+    <h1>Our Photo Gallery</h1>
+    <div class="top-content">
+      <h3>Photos Gallery</h3>
+      <label class="label" onclick="filterPhotos('all')">All Photos</label>
+      <label class="label" onclick="filterPhotos('family')">Family Photos</label>
+      <label class="label" onclick="filterPhotos('child')">Child Photos</label>
+      <label class="label" onclick="filterPhotos('place')">Visited Places</label>
+    </div>
+
+    <div class="photos-gallery">
+      <div class="pic place show">
+        <img src="https://cdn.create.vista.com/api/media/small/23467114/stock-photo-couple-on-a-beach" alt="Place 1">
+      </div>
+      <div class="pic place show">
+        <img src="https://images.unsplash.com/photo-1623857587031-f79f53808d7a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place 2">
+      </div>
+      <div class="pic place show">
+        <img src="https://images.unsplash.com/photo-1624965085154-949b4327946b?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place 3">
+      </div>
+      
+      <div class="pic family show">
+        <img src="https://media.istockphoto.com/id/2025188485/photo/laughing-parents-carrying-their-children-on-their-back-outside-in-their-yard.webp?b=1&s=170667a&w=0&k=20&c=y-V0JXfkJPaKW1d5V_yAzp8akOvaZJChaNZYPzdl49M=" alt="Family 1">
+      </div>
+      <div class="pic family show">
+        <img src="https://media.istockphoto.com/id/1264230744/photo/happy-parents-and-kid-walking-together-in-summer.jpg?s=612x612&w=0&k=20&c=1T0_p_tCwCyybLIC1xk1a562A2Pz1_FDlM7G-QMj0RU=" alt="Family 2">
+      </div>
+      <div class="pic family show">
+        <img src="https://media.istockphoto.com/id/1182904348/photo/young-family-having-fun-outdoors.jpg?s=612x612&w=0&k=20&c=hlS_WLOvm6NfJC2o88DhKLGdPoQq-CDHT-0illKLlIQ=" alt="Family 3">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1477239439998-839196943351?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max" alt="Child 1">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1681416614092-4d86566f0d40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2hpbGQlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D" alt="Child 2">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1681414104573-748d670397f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hpbGQlMjBwaG90b3N8ZW58MHx8MHx8fDA%3D" alt="Child 3">
+      </div>
+      <div class="pic place show">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmzY1kTRum1uX5q_t66hk6M_LzaFyT9j9dNA&s" alt="Place 4">
+      </div>
+      <div class="pic place show">
+        <img src="https://images.unsplash.com/photo-1622616235693-d9c1de2bf0cd?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place 5">
+      </div>
+      <div class="pic place show">
+        <img src="https://images.unsplash.com/photo-1624964562545-e84a3e0f8aa2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fFBsYWNlcyUyMHBpY3N8ZW58MHx8MHx8fDA%3D" alt="Place 6">
+      </div>
+      <div class="pic family show">
+        <img src="https://jessicarockowitz.com/wp-content/uploads/sites/7334/2022/06/Family-Photographer-Austin-TX-Jessica-Rockowitz-Photography_0232.jpg" alt="Family 4">
+      </div>
+      <div class="pic family show">
+        <img src="https://media.istockphoto.com/id/2152246296/photo/funny-little-boy-with-his-father-playing-with-garden-hose-in-sunny-backyard-preschooler-child.jpg?s=612x612&w=0&k=20&c=Nf2O6G5XEYourLMiaudtuUEjhKj0vsw19oYcwl-SAFc=" alt="Family 5">
+      </div>
+      <div class="pic family show">
+        <img src="https://media.istockphoto.com/id/855262826/photo/last-one-to-the-top-of-the-hill.jpg?s=612x612&w=0&k=20&c=MKyPSRCzZhX_9pQXlV7zjZWvjsCcg8FG0KxoSoK31hA=" alt="Family 6">
+      </div>
+      <div class="pic child show">
+        <img src="https://img.freepik.com/free-photo/pretty-little-girl-with-red-hair-plays-with-fallen-leaves_8353-497.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1721779200&semt=ais_user" alt="Child 4">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1681415851906-07936d15815c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Child 5">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1670291594112-72dff2eb071f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Child 6">
+      </div>
+      <div class="pic place show">
+        <img src="https://images.unsplash.com/photo-1695266544264-caa7632741b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhdXRpZnVsJTIwcGxhY2VzfGVufDB8fDB8fHww" alt="Place 7">
+      </div>
+      <div class="pic place show">
+        <img src="https://images.unsplash.com/photo-1615880484746-a134be9a6ecf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fFBsYWNlcyUyMHBpY3N8ZW58MHx8MHx8fDA%3D" alt="Place 8">
+      </div>
+      <div class="pic place show">
+        <img src="https://images.unsplash.com/photo-1623857585895-cf4da25a1ef6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fFBsYWNlcyUyMHBpY3N8ZW58MHx8MHx8fDA%3D" alt="Place 9">
+      </div>
+      <div class="pic family show">
+        <img src="https://images.unsplash.com/photo-1475503572774-15a45e5d60b9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZmFtaWx5JTIwcGljc3xlbnwwfHwwfHx8MA%3D%3D" alt="Family 7">
+      </div>
+      <div class="pic family show">
+        <img src="https://media.istockphoto.com/id/1141360544/photo/family-has-fun-playing-in-the-field.jpg?s=612x612&w=0&k=20&c=KOIBECY4OOn5WWcrOYjSStfuU-2f_vKX0WQBrQEr_LE=" alt="Family 8">
+      </div>
+      <div class="pic family show">
+        <img src="https://media.istockphoto.com/id/464448752/photo/happy-family.jpg?s=612x612&w=0&k=20&c=UcL_yMzHzkNPOBM-I8agYKU5QdsLeiSlcmEZpy_ORwE=" alt="Family 9">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1489710437720-ebb67ec84dd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGNoaWxkJTIwcGljc3xlbnwwfHwwfHx8MA%3D%3D" alt="Child 7">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1681416700802-cd2e819e61b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Y2hpbGQlMjBwaG90b3xlbnwwfHwwfHx8MA%3D%3D" alt="Child 8">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1681416268809-b5d56638f7ae?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNoaWxkJTIwcGhvdG98ZW58MHx8MHx8fDA%3D" alt="Child 9">
+      </div>
+      <div class="pic place show">
+        <img src="https://plus.unsplash.com/premium_photo-1672116453000-c31b150f48ef?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place 10">
+      </div>
+      <div class="pic place show">
+        <img src="https://images.unsplash.com/photo-1615880325185-c794f749b92c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fFBsYWNlcyUyMHBpY3N8ZW58MHx8MHx8fDA%3D" alt="Place 11">
+      </div>
+      <div class="pic place show">
+        <img src="https://images.unsplash.com/photo-1624965085151-0710f6b3f284?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fFBsYWNlcyUyMHBpY3N8ZW58MHx8MHx8fDA%3D" alt="Place 12">
+      </div>
+      <div class="pic family show">
+        <img src="https://plus.unsplash.com/premium_photo-1677666510144-e29849585b49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZmFtaWx5JTIwcGljc3xlbnwwfHwwfHx8MA%3D%3D" alt="Family 10">
+      </div>
+      <div class="pic family show">
+        <img src="https://media.istockphoto.com/id/870477374/photo/little-girl-with-special-needs-enjoy-spending-time-with-mother.jpg?s=612x612&w=0&k=20&c=_jIyrHb00H7BhbdfRGVZYSchIloFnCNZfDHWXADYmsg=" alt="Family 11">
+      </div>
+      <div class="pic family show">
+        <img src="https://media.istockphoto.com/id/626536916/photo/spring-family-walk.jpg?s=612x612&w=0&k=20&c=sKf2G0ozd9DeqaLRVJrVRfmRqeqpn0Rmel_pp-5Uu2Q=" alt="Family 12">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?q=80&w=1886&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Child 10">
+      </div>
+      <div class="pic child show">
+        <img src="https://plus.unsplash.com/premium_photo-1663089896027-3707e8122de9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Child 11">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1684971563816-5663a5347241?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGhhcHB5JTIwY2hpbGR8ZW58MHx8MHx8fDA%3D" alt="Child 12">
+      </div>
+      <div class="pic place show">
+        <img src="https://plus.unsplash.com/premium_photo-1681255760839-6581e2eb3e96?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place 13">
+      </div>
+      <div class="pic place show">
+        <img src="https://images.unsplash.com/photo-1624964649359-705cc89f9ce4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Place 14">
+      </div>
+      <div class="pic place show">
+        <img src="https://images.unsplash.com/photo-1623857584158-23c769acb3c5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDV8fFBsYWNlcyUyMHBpY3N8ZW58MHx8MHx8fDA%3D" alt="Place 15">
+      </div>
+      <div class="pic family show">
+        <img src="https://plus.unsplash.com/premium_photo-1661403706023-7c0bf960ab57?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmFtaWx5JTIwcGljc3xlbnwwfHwwfHx8MA%3D%3D" alt="Family 13">
+      </div>
+      <div class="pic family show">
+        <img src="https://media.istockphoto.com/id/1278849494/photo/family-with-small-daughter-using-laptop-outdoors-weekend-away-in-container-house-in.jpg?s=612x612&w=0&k=20&c=QZ-GVIZd6Kfh4BQ23mudiKgrih2X8TNNvZF74RxhVIE=" alt="Family 14">
+      </div>
+      <div class="pic family show">
+        <img src="https://media.istockphoto.com/id/2162013840/photo/family-explores-lakeshore-together.jpg?s=612x612&w=0&k=20&c=YwFy9VKRgmUFojr64BGZTx55RBKQspJGOASO_4QoVZ4=" alt="Family 15">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1455642305367-68834a1da7ab?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2hpbGQlMjBwaWNzfGVufDB8fDB8fHww" alt="Child 13">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1543854704-2b1b011701e6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGhhcHB5JTIwY2hpbGR8ZW58MHx8MHx8fDA%3D" alt="Child 14">
+      </div>
+      <div class="pic child show">
+        <img src="https://images.unsplash.com/photo-1693927632151-06cd47056128?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Child 15">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function filterPhotos(category) {
+      const photos = document.querySelectorAll('.pic');
+      if (category === 'all') {
+        photos.forEach(photo => {
+          photo.classList.add('show');
+        });
+      } else {
+        photos.forEach(photo => {
+          if (photo.classList.contains(category)) {
+            photo.classList.add('show');
+          } else {
+            photo.classList.remove('show');
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>
